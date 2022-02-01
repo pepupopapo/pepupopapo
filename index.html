@@ -6,7 +6,7 @@
 </head>
 
 <div>
-	<p>test</p>
+	<h3>PW自動入力のテスト</h3>
 	<form action="test" method="POST">
 	  <input type="text"
 		name="one-time-pw"
@@ -19,6 +19,14 @@
 	</form>
 </div>
 <div>
+	<h3>テスト方法</h3>
+	0:携帯電話番号のあるスマホ２台（SMS送信をする端末、SMSを受け取りPW認証する端末）を用意する
+	<p>1:このページをSMSを受け取るスマホ端末のデフォルトブラウザで開く
+	<br />
+	2:下のSMS確認コード例をSMS送信するスマホからSMSで送信する
+	<br />
+	3:SMSを受け取る→自動入力される（はず）
+	</p>
 	<h3>SMS確認コード例</h3>
 	<p>確認コード：123456
 	<br />
@@ -28,7 +36,22 @@
 	</p>
 </div>
 <div>
-	<h3>AJAX test (jQuery)</h3>
+	<h3>フォーム部分html</h3>
+	<p>
+		<form action="test" method="POST">
+		  <input type="text"
+			name="one-time-pw"
+			id="one-time-pw-test"
+			input-mode='numeric'
+			auto-complete='one-time-code'
+			pattern="\d{6}"
+			required />
+		<input type="submit" value="リクエストを送信">
+		</form>
+	</p>
+</div>
+<div>
+	<h3>AJAXとjQueryバージョンテスト(jQuery)</h3>
 	<div class="result">ここにajaxの結果を書き換えます</div>
 	<p>1.4.2 jQueryでAjax動作確認</p>
 	<input type="button" class="sample_btn" value="ajax通信で恵比寿ガーデンプレイスの住所情報を取得">
