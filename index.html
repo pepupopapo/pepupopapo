@@ -7,7 +7,7 @@
 
 <div>
 	<h3>PW自動入力のテスト</h3>
-	<form action="test" method="POST">
+<!-- 	<form action="test" method="POST">
 	  <input type="text"
 		name="one-time-pw"
 		id="one-time-pw-test"
@@ -16,7 +16,27 @@
 		pattern="\d{6}"
 		required />
 	<input type="submit" value="リクエストを送信">
-	</form>
+	</form> -->
+		<fieldset id="loginfs">
+		<legend>ログインフォーム(By Yahoo)</legend>		
+		<form method="post" action="/config/login" name="login_form">
+		<div class="inputArea clearfix" id="inputArea">
+		<div id="codeWrap" class="" data-ylk="sec:code_input;">
+		<dl id="codeBox" class="item">
+		<dt><label for="code" class="offLeft">確認コード</label></dt>
+		<dd id="cd"><input type="tel" name="code" id="code" value="" class="" placeholder="確認コード" spellcheck="false" autocomplete="one-time-code"></dd>
+		</dl><!--/.item-->
+		</div><!--/#codeWrap-->
+		
+		<div id="submitWrap" class="" data-ylk="sec:submit;">
+		<div id="loginSubmit" class="btnSubmit">
+		<button id="btnSubmit" name="btnSubmit" type="submit" data-ylk="sec:submit;slk:login;pos:1;" data-rapid_p="1"><span>ログイン</span></button>
+		</div>
+		</div><!--/#submitWrap-->
+		</div><!--/.inputBox-->		
+		</div><!--/.inputArea-->
+		<input id="yjbfp_items" name="yjbfp_items" type="hidden" value="uaMozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36langja-JPscreen_height1050screen_width1680timezone_offset-540pluginsPDF Viewer|Chrome PDF Viewer|Chromium PDF Viewer|Microsoft Edge PDF Viewer|WebKit built-in PDFcanvas_imageiVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAAAXNSR0IArs4c6QAAAlBJREFUOE/VlE8opGEcxz+GJWtn292mLW07ptlZtApJcsHBRZMTMQc1bhgH5USTGkk5OLgQhts0xabERE2puYyiCNNqmzX+ZJh5m4mseW0sO+/2vrKSHcme9nd6fr+e5/P783yfJ4l/tCT5vCR9lp7K+Y8A7e0wOwvb23ebfXQL4+OwugrDw08E3Bxzu/fY2zuluTlfCf2poK0NAgGYn7/NIPsmE/T3w8oKeL3Q3R1BEESMRv1dgMMBZjMsL0NJyTWkpwdsNojFwGqF6WkIBhO0IIqgVoPFskt5+QV1dbnodGA0Ql/fOVZrAK/3PaOjIoeHIvX1OXcrkD2LBTyeKBbLAVrtR2pqXrC4CFdXBzidUdzufEZG9pUZtLQU3AcsLUFZ2S86OnwIwms8Hh1bWxJ2uw+fT43LpWdsbDcxQJIgNxdKS3eIRr9TUVGAyRTD5drB7zcwM6N+GCDXNDAAvb0xiosD2Gw6jo6OCYXO2NzMV4b4YAUyQBAgMxMaGnzU1qYTCokUFr5lcvLd4wCyVA0GGBwME48LyqAaG/Po7EzF7YahoQQzkDPLQrHbYWMD/P5LHI4vaDTP0WpzaG29vuaurgSAtTUoKrreNDcHeXnnOJ1fyc7OoqrqDXq9nB3i8V2Cwdh9Kd/0n5Z2STh8yvp6hJOTC5qaCohEktBoJAQhxsLCPikpKszmT/d1IEfC4TOmpr6hUkF19Qeysl4qG6PRH0xM+ElNTaayUovB8OrvADkqipekp6eQnKy8NcVkjYjiTzIynqFS3cZvV0/8FH8DyUVCMmh1zeIAAAAASUVORK5CYII="></form><!--/#loginForm-->
+	</fieldset>
 </div>
 <div>
 	<h3>テスト方法</h3>
